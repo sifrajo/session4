@@ -8,6 +8,7 @@
     <title>Halaman Mahasiswa</title>
 </head>
 <body>
+    @include('layout.nav')
     <div class="container text-center mt-3 pt-3 bg-white">
         <div class="row">
             <h1 class="bg-dark px-3 py-1 text-white d-inline-block">
