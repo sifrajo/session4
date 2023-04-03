@@ -22,3 +22,14 @@ Route::get('/mahasiswa', function(){
     $nilai = 100;
     return view('example.mahasiswa', compact('nama', 'nilai'));
 });
+
+Route::get('/genshin', function () {
+    $characters = [
+        ['name' => 'Qiqi', 'element' => 'Anemo', 'image' => 'qiqi.png'],
+        ['name' => 'Diluc', 'element' => 'Pyro', 'image' => 'diluc.webp'],
+        ['name' => 'Keqing', 'element' => 'Electro', 'image' => 'keqing.webp'],
+        ['name' => 'Klee', 'element' => 'Pyro', 'image' => 'klee.webp']
+
+    ];
+    return view('example.genshin', compact('characters'));
+});

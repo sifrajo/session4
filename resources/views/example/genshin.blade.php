@@ -22,7 +22,19 @@
         <div class="row justify-content-center">
             <div class="col-4 col-md-4 text-center">
             {{-- FOR --}}
+            @for ($i = 0; $i < count($characters); $i++)
+                {{-- CARD BOILER PLATE --}}
+                <div class="card">
+                    <img class="card-img-top" src="{{ asset('images/' . $characters[$i]['image']) }}"
+                        alt="{{ $characters[$i]['name'] }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $characters[$i]['name'] }}</h5>
+                        <p class="card-text">{{ $characters[$i]['element'] }}</p>
+                    </div>
+                </div>
+                {{-- END BOILET PLATE --}}
 
+            @endfor
             </div>
             {{-- WHILE --}}
             <div class="col-4 col-md-4 text-center">
@@ -44,16 +56,5 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
     </script>
 </body>
-
-{{-- CARD BOILER PLATE --}}
-{{-- <div class="card">
-        <img class="card-img-top" src="{{ asset('images/' . $characters[$i]['image']) }}"
-            alt="{{ $characters[$i]['name'] }}">
-        <div class="card-body">
-            <h5 class="card-title">{{ $characters[$i]['name'] }}</h5>
-            <p class="card-text">{{ $characters[$i]['element'] }}</p>
-        </div>
-    </div> --}}
-{{-- END BOILET PLATE --}}
 
 </html>
