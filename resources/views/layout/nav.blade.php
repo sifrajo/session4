@@ -3,10 +3,10 @@
     |
     <a href="/genshin">Genshin</a>
     |
-    <a href="/blog">HOME</a>
+    <a href="/g">HOME</a>
     |
-    <a href="/blog/tentang">TENTANG</a>
+    <a href="/tentang">TENTANG</a>
     |
-    <a href="/blog/kontak">KONTAK</a>
+    <a href="/kontak">KONTAK</a>
 
 </nav>
